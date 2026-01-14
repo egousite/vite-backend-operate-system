@@ -1,10 +1,10 @@
 ﻿// ESLint 9.x 配置文件 (Flat Config格式)
 // 导入必要的模块和插件
-import js from '@eslint/js' // ESLint 官方推荐的JavaScript规则
-import globals from 'globals' // 提供浏览器、Node.js等环境的全局变量
-import tseslint from 'typescript-eslint' // TypeScript ESLint插件
-import pluginVue from 'eslint-plugin-vue' // Vue.js ESLint插件
-import pluginPrettier from 'eslint-plugin-prettier' // Prettier集成插件
+import js from '@eslint/js'; // ESLint 官方推荐的JavaScript规则
+import globals from 'globals'; // 提供浏览器、Node.js等环境的全局变量
+import tseslint from 'typescript-eslint'; // TypeScript ESLint插件
+import pluginVue from 'eslint-plugin-vue'; // Vue.js ESLint插件
+import pluginPrettier from 'eslint-plugin-prettier'; // Prettier集成插件
 
 // 导出ESLint配置
 // 使用TypeScript ESLint的配置函数来定义配置
@@ -69,4 +69,4 @@ export default tseslint.config({
   // 忽略的文件和目录
   // ESLint不会检查这些路径下的文件
   ignores: ['**/node_modules/*', '**/dist/*', '**/build/*'],
-})
+});

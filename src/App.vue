@@ -2,14 +2,15 @@
   <h1>APP</h1>
 </template>
 <script setup lang="ts">
-const str = 'hello world'
-console.log(str)
-if (str === 'hello world') {
-  console.log('hello world')
-}
+import request from './utils/request';
+console.log(request);
+request
+  .post('/user/login', {
+    username: 'admin',
+    password: '111111',
+  })
+  .then((res) => {
+    console.log(res);
+  });
 </script>
-<style scoped lang="scss">
-h1 {
-  color: red;
-}
-</style>
+<style scoped></style>
